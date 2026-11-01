@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1748b8">
+    <title>Welcome back | VANTERA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/vantera-icon.png" type="image/png">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-brand">
+            <div><a class="logo" href="index.html"><img src="assets/vantera-logo.png" alt="VANTERA logo"></a>
+                <h1>Welcome back</h1>
+                <p>Your workspaces stay separate, and you can switch between them as your role changes.</p>
+                <div class="brand-points"><span>✓ One account, multiple workspaces</span><span>✓ School, learning,
+                        business and personal tools</span><span>✓ Privacy and permissions designed into the
+                        workflow</span></div>
+            </div>
+        </section>
+        <section class="auth-form-wrap">
+            <div class="form-box"><a class="logo" href="index.html"><img src="assets/vantera-logo.png"
+                        alt="VANTERA logo"></a>
+                <h1>Welcome back</h1>
+                <p class="muted">Log in to continue to your workspace.</p>
+                <form data-prototype-form data-next="purpose.html">
+                    <div class="form-group"><label for="identifier">Username, email or phone number</label><input
+                            id="identifier" name="identifier" autocomplete="username" required
+                            placeholder="Username, email or phone"></div>
+                    <div class="form-group"><label for="login-password">Password</label>
+                        <div class="password-wrap"><input id="login-password" name="password" type="password"
+                                autocomplete="current-password" required maxlength="64"
+                                placeholder="Your password"><button type="button" data-toggle-password="#login-password"
+                                data-allow-native="true">Show</button></div>
+                    </div>
+                    <p style="text-align:right"><a href="forgot-password.html">Forgot password?</a></p><button
+                        class="btn btn-primary full" type="submit">Log in</button>
+                    <div class="form-message" aria-live="polite"></div>
+                </form>
+                <p class="auth-note">New to VANTERA? <a href="signup.html">Create an account</a></p>
+                <p class="auth-note"><a href="index.html">← Back to VANTERA</a></p>
+                <div class="prototype-note">Front-end prototype only. No account will be created and no credentials are
+                    sent to a server until backend authentication is implemented.</div>
+            </div>
+        </section>
+    </main>
+    <script src="js/vantera.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1748b8">
+    <title>Finance | VANTERA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/vantera-icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="workspace-shell">
+        <aside class="sidebar"><a class="logo" href="index.html"><img src="assets/vantera-logo.png"
+                    alt="VANTERA logo"></a>
+            <div class="side-title">Business workspace</div><a class="side-link" href="business.html">💼 Overview</a><a
+                class="side-link active" href="finance.html">💰 Finance</a><a class="side-link"
+                href="finance.html#transactions">🧾 Transactions</a><a class="side-link" href="reports.html">📊
+                Reports</a><a class="side-link" href="team.html">👥 Team & roles</a><a class="side-link"
+                href="messages.html">💬 Communications</a><a class="side-link" href="settings.html">⚙️ Settings</a>
+            <div class="prototype-note" style="margin:20px 8px">Demo data is stored in this browser only. It is not
+                synced or backed up.</div>
+        </aside>
+        <section class="workspace-main">
+            <header class="workspace-top"><input class="search" type="search" aria-label="Search finance"
+                    placeholder="Search finance…">
+                <div class="top-actions"><a class="icon-button" href="notifications.html"
+                        aria-label="Notifications">🔔</a><a href="settings.html">👤</a></div>
+            </header>
+            <main class="workspace-content" data-finance-app data-currency="NGN">
+                <div class="workspace-header">
+                    <div><span class="eyebrow">Business workspace · Finance</span>
+                        <h1>Money, made clearer.</h1>
+                        <p class="muted">Record income and expenses, organise categories and review your net movement.
+                        </p>
+                    </div><button class="btn btn-primary" type="button" data-toggle-transaction>＋ Add
+                        transaction</button>
+                </div>
+                <div class="prototype-note">Interactive prototype: transactions are stored only in this browser using
+                    local storage. This is not a secure ledger, does not sync across devices and should not be used as
+                    the official record of a business.</div>
+                <div class="dashboard-grid" style="margin-top:20px">
+                    <article class="stat-card"><span class="muted">Total income</span>
+                        <div class="number" id="total-income">₦0</div><span class="stat-trend">Money received</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Total expenses</span>
+                        <div class="number" id="total-expense">₦0</div><span class="muted">Money spent</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Net movement</span>
+                        <div class="number" id="net-balance">₦0</div><span class="muted">Income minus expenses</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Records</span>
+                        <div class="number" id="transaction-count">0 transactions</div><span class="muted">Current
+                            browser demo</span>
+                    </article>
+                </div>
+                <section class="card transaction-form" id="transaction-form" style="margin-top:20px">
+                    <div class="panel-head">
+                        <h2>Add a transaction</h2><span class="status info">Demo</span>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group"><label for="tx-name">Description</label><input id="tx-name"
+                                    name="name" required maxlength="100" placeholder="e.g. Product sale or transport">
+                            </div>
+                            <div class="form-group"><label for="tx-kind">Transaction type</label><select id="tx-kind"
+                                    name="kind" required>
+                                    <option value="expense">Expense</option>
+                                    <option value="income">Income</option>
+                                </select></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="tx-category">Category</label><select id="tx-category"
+                                    name="category" required>
+                                    <option>Sales</option>
+                                    <option>Services</option>
+                                    <option>Other income</option>
+                                    <option>Transport</option>
+                                    <option>Supplies</option>
+                                    <option>Rent</option>
+                                    <option>Utilities</option>
+                                    <option>Staff costs</option>
+                                    <option>Marketing</option>
+                                    <option>Other expense</option>
+                                </select></div>
+                            <div class="form-group"><label for="tx-amount">Amount (₦)</label><input id="tx-amount"
+                                    name="amount" type="number" min="0.01" max="1000000000000" step="0.01" required
+                                    placeholder="0.00"></div>
+                        </div>
+                        <div class="form-group"><label for="tx-date">Date</label><input id="tx-date" name="date"
+                                type="date" required></div>
+                        <div class="transaction-actions"><button class="btn btn-primary" type="submit">Save demo
+                                transaction</button><button class="btn btn-outline" type="button"
+                                data-toggle-transaction>Cancel</button></div>
+                    </form>
+                </section>
+                <div class="split-grid" style="margin-top:20px">
+                    <section class="card">
+                        <div class="panel-head">
+                            <h2>Income and expenses</h2><span class="status">Totals</span>
+                        </div>
+                        <div class="chart-placeholder">
+                            <div style="width:100%">
+                                <div id="income-expense-bars" aria-label="Income and expense comparison"></div>
+                                <div class="legend" style="justify-content:center;margin-top:22px">
+                                    <span>Income</span><span>Expenses</span><span>Net</span></div>
+                            </div>
+                        </div>
+                        <p class="field-hint">The chart updates from demo transactions in this browser. It is a simple
+                            comparison, not a tax or accounting report.</p>
+                    </section>
+                    <section class="card">
+                        <h2>Suggested categories</h2>
+                        <p class="muted">Keep categories consistent so future reports are useful.</p>
+                        <div class="legend">
+                            <span>Sales</span><span>Services</span><span>Transport</span><span>Supplies</span><span>Rent</span><span>Staff
+                                costs</span><span>Utilities</span></div>
+                        <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+                        <h3>Future improvements</h3>
+                        <p class="muted">Budgets, recurring transactions, receipts, exportable reports, multi-currency
+                            support and role-based approvals belong in the next implementation stage.</p>
+                    </section>
+                </div>
+                <section class="card" id="transactions" style="margin-top:20px">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Transactions</h2>
+                            <p class="muted">Review and filter your demo records.</p>
+                        </div><button class="btn btn-outline" type="button" data-clear-demo>Clear demo data</button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label for="transaction-search">Search</label><input
+                                id="transaction-search" type="search" placeholder="Description or category"></div>
+                        <div class="form-group"><label for="transaction-filter">Type</label><select
+                                id="transaction-filter">
+                                <option value="all">All transactions</option>
+                                <option value="income">Income only</option>
+                                <option value="expense">Expenses only</option>
+                            </select></div>
+                    </div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description / category</th>
+                                    <th>Type</th>
+                                    <th style="text-align:right">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transaction-rows">
+                                <tr>
+                                    <td colspan="4">Loading demo transactions…</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+            <nav class="mobile-nav"><a href="business.html"><span>💼</span>Business</a><a
+                    href="finance.html"><span>💰</span>Finance</a><a href="messages.html"><span>💬</span>Messages</a><a
+                    href="reports.html"><span>📊</span>Reports</a><a href="settings.html"><span>⚙️</span>Settings</a>
+            </nav>
+        </section>
+    </div>
+    <script src="js/vantera.js" defer></script>
+    <script>const dateField = document.getElementById('tx-date'); if (dateField) dateField.value = new Date().toISOString().slice(0, 10);</script>
+</body>
+
+</html>

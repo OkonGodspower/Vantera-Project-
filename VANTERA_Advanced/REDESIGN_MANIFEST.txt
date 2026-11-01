@@ -1,0 +1,12 @@
+VANTERA REDESIGN MANIFEST
+=========================
+
+HTML pages: 63
+JavaScript: js/vantera.js
+Stylesheet: css/style.css
+
+New feature pages include: parent.html, finance.html, messages.html, notifications.html, memberships.html, assignments.html, subjects.html, progress.html, classes.html, attendance.html, grades.html, school-staff.html, reports.html, permissions.html, academic-setup.html, live-sessions.html, inventory.html and customers.html.
+
+Static validation: all local href/src file references resolve. JavaScript syntax checked with Node.js. This does not replace browser QA, accessibility testing, cross-device testing or backend security review.
+
+The original ZIP remains untouched. This redesign is a frontend prototype only.

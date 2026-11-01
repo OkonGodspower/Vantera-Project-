@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1748b8">
+    <meta name="description" content="Educator workspace in VANTERA.">
+    <title>Educator Workspace | VANTERA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/vantera-icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="workspace-shell">
+        <aside class="sidebar"><a class="logo" href="index.html"><img src="assets/vantera-logo.png"
+                    alt="VANTERA logo"></a>
+            <div class="side-title">Your workspace</div><a class="side-link active" href="dashboard.html">🏠 Home</a><a
+                class="side-link " href="student.html">📚 Learning</a><a class="side-link " href="educator.html">🧑‍🏫
+                Educator</a><a class="side-link " href="school.html">🏫 School</a><a class="side-link "
+                href="business.html">💼 Business</a><a class="side-link " href="finance.html">💰 Finance</a><a
+                class="side-link " href="messages.html">💬 Messages</a><a class="side-link "
+                href="notifications.html">🔔 Notifications</a><a class="side-link " href="calendar.html">📅
+                Calendar</a><a class="side-link " href="files.html">📁 Files</a><a class="side-link "
+                href="settings.html">⚙️ Settings</a>
+            <div class="prototype-note" style="margin:20px 8px">Prototype mode<br><small>Sample content only. No live
+                    account data.</small></div><a class="side-link" href="index.html">↗ Public website</a>
+        </aside>
+        <section class="workspace-main">
+            <header class="workspace-top"><input class="search" type="search" aria-label="Search workspace"
+                    placeholder="Search this workspace…">
+                <div class="top-actions"><a class="icon-button" href="notifications.html"
+                        aria-label="Notifications">🔔<span class="notification-dot"></span></a><button
+                        class="workspace-switcher" type="button" data-switch-workspace><span>Educator
+                            workspace</span>⌄</button><a href="settings.html" aria-label="Profile settings">👤</a></div>
+            </header>
+            <main class="workspace-content">
+                <div class="workspace-header">
+                    <div><span class="eyebrow">Educator workspace</span>
+                        <h1>Teach, organise and communicate in one place.</h1>
+                        <p class="muted">Manage multiple classes and subjects without mixing up school and private-class
+                            data.</p>
+                    </div><a class="btn btn-primary" href="messages.html">＋ Send announcement</a>
+                </div>
+                <div class="dashboard-grid">
+                    <article class="stat-card"><span class="muted">Active classes</span>
+                        <div class="number">5</div><span class="muted">Sample count</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Assignments</span>
+                        <div class="number">12</div><span class="muted">Across your classes</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">To review</span>
+                        <div class="number">8</div><span class="muted">Sample submissions</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Next lesson</span>
+                        <div class="number">10:00</div><span class="muted">Sample schedule</span>
+                    </article>
+                </div>
+                <div class="split-grid" style="margin-top:20px">
+                    <section class="card">
+                        <div class="panel-head">
+                            <h2>Teaching schedule</h2><a href="calendar.html">Full calendar</a>
+                        </div>
+                        <ul class="list">
+                            <li><span><strong>Mathematics</strong><br><small class="muted">Class A · Sample
+                                        timetable</small></span><span class="status info">10:00</span></li>
+                            <li><span><strong>Science</strong><br><small class="muted">Private class · Sample
+                                        timetable</small></span><span class="status">12:30</span></li>
+                        </ul>
+                    </section>
+                    <section class="card">
+                        <h2>Class boundaries matter</h2>
+                        <p class="muted">Choose the specific school or private class before viewing learners, grades,
+                            attendance or sending a message. Backend permissions must enforce these boundaries.</p><a
+                            class="btn btn-outline" href="memberships.html">View memberships</a>
+                    </section>
+                </div>
+                <section class="section" style="padding:28px 0 8px">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Workspace tools</h2>
+                            <p class="muted">Tools available for this role.</p>
+                        </div>
+                    </div>
+                    <div class="module-grid">
+                        <article class="module-card">
+                            <div class="icon">🏫</div>
+                            <h3>My classes</h3>
+                            <p class="muted">Manage school classes and private classes separately.</p><a
+                                href="classes.html">Manage classes →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📝</div>
+                            <h3>Assignments</h3>
+                            <p class="muted">Create assignments and track submissions.</p><a
+                                href="assignments.html">Manage assignments →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📋</div>
+                            <h3>Attendance</h3>
+                            <p class="muted">Record attendance for your selected class.</p><a
+                                href="attendance.html">Take attendance →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📊</div>
+                            <h3>Assessments & grades</h3>
+                            <p class="muted">Configure assessments and grading scales.</p><a href="grades.html">View
+                                grades →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📢</div>
+                            <h3>Announcements</h3>
+                            <p class="muted">Send updates to a class or authorised group.</p><a
+                                href="messages.html">Send update →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">🔗</div>
+                            <h3>Live lesson links</h3>
+                            <p class="muted">Share approved Meet, YouTube or other session links.</p><a
+                                href="live-sessions.html">Manage sessions →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">👥</div>
+                            <h3>Learners</h3>
+                            <p class="muted">Review learner lists in classes you are authorised to access.</p><a
+                                href="people.html">View learners →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📚</div>
+                            <h3>Resources</h3>
+                            <p class="muted">Organise lesson notes and materials.</p><a href="files.html">Manage
+                                resources →</a>
+                        </article>
+                    </div>
+                </section>
+                <div class="prototype-note" style="margin-top:24px">This is a front-end prototype. Sample figures and
+                    actions are for demonstration; role permissions, account data and shared records must be enforced by
+                    the backend before launch.</div>
+            </main>
+            <nav class="mobile-nav"><a href="dashboard.html"><span>🏠</span>Home</a><a
+                    href="messages.html"><span>💬</span>Messages</a><a
+                    href="notifications.html"><span>🔔</span>Alerts</a><a
+                    href="calendar.html"><span>📅</span>Calendar</a><a href="settings.html"><span>⚙️</span>Settings</a>
+            </nav>
+        </section>
+    </div>
+    <script src="js/vantera.js" defer></script>
+</body>
+
+</html>

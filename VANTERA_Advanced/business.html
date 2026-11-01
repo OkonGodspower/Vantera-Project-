@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1748b8">
+    <meta name="description" content="Business workspace in VANTERA.">
+    <title>Business Workspace | VANTERA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/vantera-icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="workspace-shell">
+        <aside class="sidebar"><a class="logo" href="index.html"><img src="assets/vantera-logo.png"
+                    alt="VANTERA logo"></a>
+            <div class="side-title">Your workspace</div><a class="side-link active" href="dashboard.html">🏠 Home</a><a
+                class="side-link " href="student.html">📚 Learning</a><a class="side-link " href="educator.html">🧑‍🏫
+                Educator</a><a class="side-link " href="school.html">🏫 School</a><a class="side-link "
+                href="business.html">💼 Business</a><a class="side-link " href="finance.html">💰 Finance</a><a
+                class="side-link " href="messages.html">💬 Messages</a><a class="side-link "
+                href="notifications.html">🔔 Notifications</a><a class="side-link " href="calendar.html">📅
+                Calendar</a><a class="side-link " href="files.html">📁 Files</a><a class="side-link "
+                href="settings.html">⚙️ Settings</a>
+            <div class="prototype-note" style="margin:20px 8px">Prototype mode<br><small>Sample content only. No live
+                    account data.</small></div><a class="side-link" href="index.html">↗ Public website</a>
+        </aside>
+        <section class="workspace-main">
+            <header class="workspace-top"><input class="search" type="search" aria-label="Search workspace"
+                    placeholder="Search this workspace…">
+                <div class="top-actions"><a class="icon-button" href="notifications.html"
+                        aria-label="Notifications">🔔<span class="notification-dot"></span></a><button
+                        class="workspace-switcher" type="button" data-switch-workspace><span>Business
+                            workspace</span>⌄</button><a href="settings.html" aria-label="Profile settings">👤</a></div>
+            </header>
+            <main class="workspace-content">
+                <div class="workspace-header">
+                    <div><span class="eyebrow">Business workspace</span>
+                        <h1>Know what is happening in your business.</h1>
+                        <p class="muted">Coordinate people, work and finances in one workspace with access appropriate
+                            to each staff role.</p>
+                    </div><a class="btn btn-primary" href="finance.html">＋ Add transaction</a>
+                </div>
+                <div class="dashboard-grid">
+                    <article class="stat-card"><span class="muted">Income this month</span>
+                        <div class="number">₦0</div><span class="muted">Demo data starts empty</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Expenses this month</span>
+                        <div class="number">₦0</div><span class="muted">Demo data starts empty</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Net movement</span>
+                        <div class="number">₦0</div><span class="muted">Demo calculations</span>
+                    </article>
+                    <article class="stat-card"><span class="muted">Transactions</span>
+                        <div class="number">0</div><span class="muted">Browser demo only</span>
+                    </article>
+                </div>
+                <div class="split-grid" style="margin-top:20px">
+                    <section class="card">
+                        <div class="panel-head">
+                            <h2>Financial overview</h2><a href="finance.html">Open Finance →</a>
+                        </div>
+                        <p class="muted">Add sample transactions in Finance to see totals update in this browser. This
+                            is a prototype, not a verified accounting ledger.</p>
+                        <div class="chart-placeholder">
+                            <div>
+                                <div class="bar-chart"><span style="height:24%" data-label="Jan"></span><span
+                                        style="height:44%" data-label="Feb"></span><span style="height:36%"
+                                        data-label="Mar"></span><span style="height:67%" data-label="Apr"></span><span
+                                        style="height:54%" data-label="May"></span><span style="height:79%"
+                                        data-label="Jun"></span></div>
+                                <p class="muted" style="text-align:center;margin-top:34px">Illustrative activity only —
+                                    not real financial data</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <h2>Team communications</h2>
+                        <p class="muted">Announcements can be designed for everyone or selected teams such as sales,
+                            cashiers, supervisors and managers. Actual delivery and access checks require the backend.
+                        </p><a class="btn btn-outline" href="messages.html">Open communications</a>
+                    </section>
+                </div>
+                <section class="section" style="padding:28px 0 8px">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Workspace tools</h2>
+                            <p class="muted">Tools available for this role.</p>
+                        </div>
+                    </div>
+                    <div class="module-grid">
+                        <article class="module-card">
+                            <div class="icon">💰</div>
+                            <h3>Finance</h3>
+                            <p class="muted">Track income, expenses, categories and net balance.</p><a
+                                href="finance.html">Open finance →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">🧾</div>
+                            <h3>Transactions</h3>
+                            <p class="muted">Review and filter financial activity.</p><a
+                                href="finance.html#transactions">View transactions →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📊</div>
+                            <h3>Reports & charts</h3>
+                            <p class="muted">Explore cash-flow summaries and reporting views.</p><a
+                                href="reports.html">View reports →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">👥</div>
+                            <h3>Team & roles</h3>
+                            <p class="muted">Separate owner, manager, supervisor and staff access.</p><a
+                                href="team.html">Manage team →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📦</div>
+                            <h3>Products & inventory</h3>
+                            <p class="muted">Plan future inventory and stock workflows.</p><a
+                                href="inventory.html">Manage inventory →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">🧑‍💼</div>
+                            <h3>Customers</h3>
+                            <p class="muted">Prepare customer management workflows.</p><a href="customers.html">View
+                                customers →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">📢</div>
+                            <h3>Team announcements</h3>
+                            <p class="muted">Send updates to selected teams or all staff.</p><a
+                                href="messages.html">Send announcement →</a>
+                        </article>
+                        <article class="module-card">
+                            <div class="icon">✅</div>
+                            <h3>Tasks & projects</h3>
+                            <p class="muted">Coordinate responsibilities and deadlines.</p><a href="tasks.html">Manage
+                                work →</a>
+                        </article>
+                    </div>
+                </section>
+                <div class="prototype-note" style="margin-top:24px">This is a front-end prototype. Sample figures and
+                    actions are for demonstration; role permissions, account data and shared records must be enforced by
+                    the backend before launch.</div>
+            </main>
+            <nav class="mobile-nav"><a href="dashboard.html"><span>🏠</span>Home</a><a
+                    href="messages.html"><span>💬</span>Messages</a><a
+                    href="notifications.html"><span>🔔</span>Alerts</a><a
+                    href="calendar.html"><span>📅</span>Calendar</a><a href="settings.html"><span>⚙️</span>Settings</a>
+            </nav>
+        </section>
+    </div>
+    <script src="js/vantera.js" defer></script>
+</body>
+
+</html>

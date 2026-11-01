@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1748b8">
+    <title>Create your account | VANTERA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/vantera-icon.png" type="image/png">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-brand">
+            <div><a class="logo" href="index.html"><img src="assets/vantera-logo.png" alt="VANTERA logo"></a>
+                <h1>Create your account</h1>
+                <p>A flexible workspace for your learning, teaching, school, business and personal work.</p>
+                <div class="brand-points"><span>✓ One account, multiple workspaces</span><span>✓ School, learning,
+                        business and personal tools</span><span>✓ Privacy and permissions designed into the
+                        workflow</span></div>
+            </div>
+        </section>
+        <section class="auth-form-wrap">
+            <div class="form-box"><a class="logo" href="index.html"><img src="assets/vantera-logo.png"
+                        alt="VANTERA logo"></a>
+                <h1>Create your account</h1>
+                <p class="muted">Start with one account. You can join more than one school, class or workspace later.
+                </p>
+                <form data-prototype-form data-next="verify-email.html" novalidate>
+                    <div class="form-group"><label for="full-name">Full name</label><input id="full-name"
+                            name="full_name" autocomplete="name" required maxlength="100" placeholder="Your full name">
+                    </div>
+                    <div class="form-group"><label for="username">Username</label><input id="username" name="username"
+                            autocomplete="username" required minlength="3" maxlength="30" pattern="[A-Za-z0-9._-]+"
+                            placeholder="Choose a username">
+                        <p class="field-hint">3–30 characters; letters, numbers, dots, underscores or hyphens.</p>
+                    </div>
+                    <div class="form-group"><label for="email">Email address</label><input id="email" name="email"
+                            type="email" autocomplete="email" required placeholder="you@example.com"></div>
+                    <div class="form-row">
+                        <div class="form-group"><label for="country-code">Country code</label><select id="country-code"
+                                name="country_code">
+                                <option value="+234" selected>Nigeria (+234)</option>
+                                <option value="+233">Ghana (+233)</option>
+                                <option value="+254">Kenya (+254)</option>
+                                <option value="+27">South Africa (+27)</option>
+                                <option value="+44">United Kingdom (+44)</option>
+                                <option value="+1">United States/Canada (+1)</option>
+                                <option value="+91">India (+91)</option>
+                                <option value="+86">China (+86)</option>
+                                <option value="+55">Brazil (+55)</option>
+                                <option value="+49">Germany (+49)</option>
+                                <option value="+33">France (+33)</option>
+                                <option value="+81">Japan (+81)</option>
+                            </select></div>
+                        <div class="form-group"><label for="phone">Phone number</label><input id="phone" name="phone"
+                                type="tel" autocomplete="tel-national" required placeholder="801 234 5678"></div>
+                    </div>
+                    <div class="form-group"><label for="phone-alt">Second phone number <span
+                                class="muted">(optional)</span></label><input id="phone-alt" name="phone_alt" type="tel"
+                            placeholder="Optional backup number"></div>
+                    <div class="form-group"><label for="password">Password</label>
+                        <div class="password-wrap"><input id="password" name="password" type="password"
+                                autocomplete="new-password" minlength="8" maxlength="64" required
+                                placeholder="8–64 characters"><button type="button" data-toggle-password="#password"
+                                data-allow-native="true">Show</button></div>
+                        <div class="password-meter"><span data-password-meter></span></div>
+                        <p class="field-hint" data-password-strength>Password strength: add a password. Use a mix of
+                            letters, numbers and symbols.</p>
+                    </div>
+                    <div class="form-group"><label for="confirm-password">Confirm password</label>
+                        <div class="password-wrap"><input id="confirm-password" name="confirm_password" type="password"
+                                autocomplete="new-password" minlength="8" maxlength="64" required
+                                placeholder="Enter password again"><button type="button"
+                                data-toggle-password="#confirm-password" data-allow-native="true">Show</button></div>
+                    </div><label class="check"><input type="checkbox" name="terms" required> I agree to the <a
+                            href="terms.html">Terms</a> and have read the <a href="privacy.html">Privacy
+                            Notice</a>.</label>
+                    <div class="form-message" data-form-message aria-live="polite" style="display:none"></div><button
+                        class="btn btn-primary full" type="submit" style="margin-top:20px">Continue to email
+                        verification</button>
+                </form>
+                <p class="auth-note">Already have an account? <a href="login.html">Log in</a></p>
+                <p class="auth-note"><a href="index.html">← Back to VANTERA</a></p>
+                <div class="prototype-note">Front-end prototype only. No account will be created and no credentials are
+                    sent to a server until backend authentication is implemented.</div>
+            </div>
+        </section>
+    </main>
+    <script src="js/vantera.js" defer></script>
+</body>
+
+</html>
